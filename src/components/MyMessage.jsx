@@ -5,12 +5,12 @@ const MyMessage = ({ message }) => {
                 src={message.attachments[0].file}
                 alt="message-attachment"
                 className="message-image"
-                style={{ flat: 'right' }}
+                style={{ float: 'right' }}
             />
         )
     }
     return (
-        <div class="message" style={{ float: 'right', marginRight: '18px', color: 'white', backgroundColor:'33b2a50' }}>
+        <div class="message" style={{ float: 'right', marginRight: '18px', color: 'white', backgroundColor:'#3b2a50' }}>
             {message.text}
         </div>
     );
