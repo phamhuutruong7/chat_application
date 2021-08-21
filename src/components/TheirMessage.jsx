@@ -10,7 +10,7 @@ const TheirMessage = ({ lastMessage, message}) => {
                     style={{backgroundImage: `url(${message?.sender?.avatar})`}}
                 />
             )}
-            {message?.attachments?.length > 0
+            {message.attachments && message.attachments.length > 0
             ? (
                 <img
                     src={message.attachments[0].file}
@@ -25,6 +25,6 @@ const TheirMessage = ({ lastMessage, message}) => {
             )}
         </div>
     );
-}
+};
 
 export default TheirMessage;
